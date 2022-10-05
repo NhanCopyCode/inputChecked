@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color: #333;
+    font-size: 62.5%;
+    font-family: "Open Sans", sans-serif;
+}
+
+.main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+}
+
+.form {
+    width: 360px;
+    min-height: 100px;
+    background-color: #fff;
+    border-radius: 2px;
+    text-align: center;
+    padding: 32px 24px;
+    box-shadow: 0 2px 5px 0 rgba(51, 62, 73, 0.1);
+}
+
+
+.headding {
+    font-size: 2rem;
+    margin-top: 18px;
+}
+
+.desc {
+    font-size: 1.6rem;
+    font-weight: lighter;
+    margin-bottom: 30px;
+    color: #636D77;
+    margin-top: 18px;
+}   
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.4rem;
+
+}
+
+.input,
+.password,
+.password-confirmation {
+    width: 100%;
+    padding: 8px 12px;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    margin-top: 4px;
+}   
+
+.input:hover,
+.password:hover,
+.password-confirmation:hover {
+    border-color: #1DBFAF;
+}
+.notification {
+    font-size: 1.2rem;
+    margin-top: 4px;
+}
+
+.button {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #1DBFAF;
+    color: #fff;
+    margin-top: 4px;
+}
+
+.button:hover {
+    background-color: #1ac7b6;
+}
+
+/* Invalid */
+
+.form-group.invalid .input {
+    border-color: red;
+}
+
+.form-group.invalid .notification {
+    color: red;
+}
+
+.form-group.invalid #password{
+    border-color: red;
+}
